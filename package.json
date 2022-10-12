@@ -8,7 +8,8 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "prepare": "simple-git-hooks"
   },
   "dependencies": {
     "@astrojs/solid-js": "^1.1.1",
@@ -29,5 +30,13 @@
   },
   "eslintConfig": {
     "extends": "@antfu"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm exec lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,astro,vue,svelte}": [
+      "eslint --fix"
+    ]
   }
 }
