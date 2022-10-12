@@ -1,0 +1,33 @@
+{
+  "name": "@example/basics",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/solid-js": "^1.1.1",
+    "astro": "^1.4.7",
+    "solid-js": "^1.4.3"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.27.0",
+    "@iconify-json/carbon": "^1.1.8",
+    "@iconify-json/line-md": "^1.1.16",
+    "@unocss/astro": "^0.45.29",
+    "@unocss/reset": "^0.45.29",
+    "eslint": "^8.25.0",
+    "lint-staged": "^13.0.3",
+    "simple-git-hooks": "^2.8.0",
+    "typescript": "^4.8.4",
+    "unocss": "^0.45.29"
+  },
+  "eslintConfig": {
+    "extends": "@antfu"
+  }
+}
