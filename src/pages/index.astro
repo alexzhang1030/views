@@ -4,17 +4,22 @@ import { data } from "@data/views";
 import MainLayout from "@layouts/MainLayout.astro";
 ---
 
-<head>
-  <title>Alex's View Playground</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-</head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Alex's View Playground</title>
+    <meta name="description" content="Alex's View Playground" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
 
-<MainLayout>
-  {
-    data.map((item) => {
-      return <ViewItem {...item} />;
-    })
-  }
-</MainLayout>
+  <MainLayout>
+    {
+      data.map((item) => {
+        return <ViewItem {...item} />;
+      })
+    }
+  </MainLayout>
+
+</html>
