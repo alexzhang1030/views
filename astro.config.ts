@@ -12,4 +12,11 @@ export default defineConfig({
   integrations: [Unocss(), solidJs()],
   output: 'server',
   adapter: vercel(),
+  vite: {
+    resolve: {
+      alias: {
+        '@assets': './src/assets',
+      },
+    },
+  },
 })
