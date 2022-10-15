@@ -13,6 +13,9 @@
       ],
       "@pages/*": [
         "src/pages/*"
+      ],
+      "@data/*": [
+        "src/data/*"
       ]
     }
   },

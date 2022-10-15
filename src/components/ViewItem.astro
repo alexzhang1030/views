@@ -2,16 +2,11 @@
 import * as url from "node:url";
 import { resolve } from "node:path";
 import { statSync } from "node:fs";
+import type { Data } from "@data/views";
 
 const __dirname = url.fileURLToPath(new url.URL(".", import.meta.url));
 
-type Framework = "react" | "vue" | "svelte" | "solid";
-
-interface Props {
-  name: string;
-  // framework shorthand
-  fw: Framework[];
-}
+interface Props extends Data {}
 
 const { name, fw } = Astro.props;
 
@@ -74,5 +69,3 @@ const statData = statSync(__filename);
     </div>
   </div>
 </div>
-
-<style></style>
