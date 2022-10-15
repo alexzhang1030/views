@@ -3,7 +3,6 @@ import * as url from "node:url";
 import { resolve } from "node:path";
 import { statSync } from "node:fs";
 
-// // ESM __dirname
 const __dirname = url.fileURLToPath(new url.URL(".", import.meta.url));
 
 interface Props {
