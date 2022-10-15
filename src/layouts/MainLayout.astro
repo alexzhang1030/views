@@ -1,0 +1,45 @@
+---
+import { Github, AstroIcon } from "@components/HeaderIcons";
+---
+
+<main
+  w-full
+  h-100vh
+  bg="#D2DADA"
+  flex="~"
+  justify-center
+  items-center
+  overflow-hidden
+>
+  <main w="90%" h="90%" bg="#ECF2ED" rounded-20px overflow-hidden>
+    <header
+      w-full
+      h-100px
+      bg="#CDE2D1"
+      flex="~"
+      justify-between
+      items-center
+      px-8
+    >
+      <div text-36px font-lobster class="title">Alex's View Playground</div>
+      <div flex justify-start items-center>
+        <div flex justify-start items-center>
+          <span mr-2 font-mono> Check out source code on</span>
+          <Github client:load />
+        </div>
+        <div font-mono ml-4>Powered By <AstroIcon client:visible /></div>
+      </div>
+    </header>
+    <main
+      w-full
+      h="[calc(100%-100px)]"
+      overflow-hidden
+      p8
+      flex="~ wrap"
+      justify-between
+      gap-3
+    >
+      <slot />
+    </main>
+  </main>
+</main>

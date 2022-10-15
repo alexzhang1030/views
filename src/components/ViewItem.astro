@@ -20,52 +20,46 @@ const __filename = resolve(
 const statData = statSync(__filename);
 ---
 
-<div
-  w-275px
-  h-150px
-  bg="#CDE2D1"
-  rounded-12px
-  cursor-pointer
-  relative
-  overflow-hidden
->
-  <div w="100%" h-95px>
-    <Logo />
-  </div>
-  <div
-    absolute
-    bottom-0
-    left-0
-    w-full
-    h-25px
-    bg="#D2DADA"
-    flex
-    justify-between
-    items-center
-    px-3
-    text-12px
-  >
-    <div font-mono h="100%" flex items-center>
-      {name}
-      {statData.mtime.toLocaleDateString()}
+<a href={`/${name}`}>
+  <div w-275px h-150px bg="#CDE2D1" rounded-12px relative overflow-hidden>
+    <div w="100%" h-95px>
+      <Logo />
     </div>
-    <div flex="~" gap-1>
-      {
-        fw.map((fw) => {
-          return (
-            <div
-              class:list={[
-                {
-                  "i-logos:react": fw === "react",
-                  "i-logos:vue": fw === "vue",
-                  "i-logos:solidjs-icon": fw === "solid",
-                  "i-logos:svelte-icon": fw === "svelte",
-                },
-              ]}
-            />
-          );
-        })
-      }
+    <div
+      absolute
+      bottom-0
+      left-0
+      w-full
+      h-25px
+      bg="#D2DADA"
+      flex
+      justify-between
+      items-center
+      px-3
+      text-12px
+    >
+      <div font-mono h="100%" flex items-center>
+        {name}
+        {statData.mtime.toLocaleDateString()}
+      </div>
+      <div flex="~" gap-1>
+        {
+          fw.map((fw) => {
+            return (
+              <div
+                class:list={[
+                  {
+                    "i-logos:react": fw === "react",
+                    "i-logos:vue": fw === "vue",
+                    "i-logos:solidjs-icon": fw === "solid",
+                    "i-logos:svelte-icon": fw === "svelte",
+                  },
+                ]}
+              />
+            );
+          })
+        }
+      </div>
     </div>
   </div>
-</div>
+</a>
