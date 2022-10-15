@@ -5,6 +5,11 @@ import Unocss from 'unocss/astro'
 import solidJs from '@astrojs/solid-js'
 
 // https://astro.build/config
+import vercel from '@astrojs/vercel/serverless'
+
+// https://astro.build/config
 export default defineConfig({
   integrations: [Unocss(), solidJs()],
+  output: 'server',
+  adapter: vercel(),
 })
