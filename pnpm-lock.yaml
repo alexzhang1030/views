@@ -5,6 +5,7 @@ specifiers:
   '@astrojs/solid-js': ^1.1.1
   '@iconify-json/carbon': ^1.1.8
   '@iconify-json/line-md': ^1.1.16
+  '@iconify-json/logos': ^1.1.17
   '@types/node': ^18.11.0
   '@unocss/astro': ^0.45.29
   '@unocss/reset': ^0.45.29
@@ -25,6 +26,7 @@ devDependencies:
   '@antfu/eslint-config': 0.27.0_z4bbprzjrhnsfa24uvmcbu7f5q
   '@iconify-json/carbon': 1.1.8
   '@iconify-json/line-md': 1.1.16
+  '@iconify-json/logos': 1.1.17
   '@types/node': 18.11.0
   '@unocss/astro': 0.45.29
   '@unocss/reset': 0.45.29
@@ -582,6 +584,12 @@ packages:
 
   /@iconify-json/line-md/1.1.16:
     resolution: {integrity: sha512-oeXIXH+8MVu88I3VAaqJUw9/txlWD/yNFjee1M+vVTwM5m6lAXmHfIyj2Bu5q8yUF8RargvnmaNnKgbY3Y3ZLw==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/logos/1.1.17:
+    resolution: {integrity: sha512-N6xKFKZ9UD5thRAwv8TvBQD3MJQe17UnN7QtfXnAVjlcnMIvdZ1lkZ12S/kw38i2v8gIZ6i6B9Cng5NPzTWd/g==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true

@@ -19,6 +19,7 @@
     "@antfu/eslint-config": "^0.27.0",
     "@iconify-json/carbon": "^1.1.8",
     "@iconify-json/line-md": "^1.1.16",
+    "@iconify-json/logos": "^1.1.17",
     "@types/node": "^18.11.0",
     "@unocss/astro": "^0.45.29",
     "@unocss/reset": "^0.45.29",
