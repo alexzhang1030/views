@@ -9,18 +9,19 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "prepare": "simple-git-hooks"
+    "prepare": "simple-git-hooks",
+    "dep:up": "taze"
   },
   "dependencies": {
-    "@astrojs/solid-js": "^1.1.1",
+    "@astrojs/solid-js": "^1.2.0",
     "@astrojs/vercel": "^2.2.0",
-    "astro": "^1.4.7",
-    "solid-js": "^1.4.3"
+    "astro": "^1.5.0",
+    "solid-js": "^1.5.7"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.27.0",
     "@iconify-json/carbon": "^1.1.8",
-    "@iconify-json/line-md": "^1.1.16",
+    "@iconify-json/line-md": "^1.1.17",
     "@iconify-json/logos": "^1.1.17",
     "@types/node": "^18.11.0",
     "@unocss/astro": "^0.45.29",
@@ -28,6 +29,7 @@
     "eslint": "^8.25.0",
     "lint-staged": "^13.0.3",
     "simple-git-hooks": "^2.8.0",
+    "taze": "^0.8.2",
     "typescript": "^4.8.4",
     "unocss": "^0.45.29"
   },
