@@ -1,5 +1,6 @@
 ---
 import { Github, AstroIcon } from "@components/HeaderIcons";
+import ViewItem from "@components/ViewItem.astro";
 ---
 
 <main
@@ -30,5 +31,16 @@ import { Github, AstroIcon } from "@components/HeaderIcons";
         <div font-mono ml-4>Powered By <AstroIcon client:visible /></div>
       </div>
     </header>
+    <main
+      w-full
+      h="[calc(100%-100px)]"
+      overflow-hidden
+      p8
+      flex="~ wrap"
+      justify-between
+      gap-3
+    >
+      <ViewItem name="Button" />
+    </main>
   </main>
 </main>

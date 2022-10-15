@@ -5,7 +5,6 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
@@ -20,6 +19,7 @@
     "@antfu/eslint-config": "^0.27.0",
     "@iconify-json/carbon": "^1.1.8",
     "@iconify-json/line-md": "^1.1.16",
+    "@types/node": "^18.11.0",
     "@unocss/astro": "^0.45.29",
     "@unocss/reset": "^0.45.29",
     "eslint": "^8.25.0",
@@ -35,8 +35,8 @@
     "pre-commit": "pnpm exec lint-staged"
   },
   "lint-staged": {
-    "*.{js,ts,tsx,astro,vue,svelte}": [
-      "eslint --fix"
+    "*.{js,ts,tsx,vue}": [
+      "npx eslint . --fix"
     ]
   }
 }

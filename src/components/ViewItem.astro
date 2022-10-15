@@ -1,0 +1,45 @@
+---
+import * as url from "node:url";
+import { resolve } from "node:path";
+import { statSync } from "node:fs";
+
+// // ESM __dirname
+const __dirname = url.fileURLToPath(new url.URL(".", import.meta.url));
+
+interface Props {
+  name: string;
+}
+
+const { name } = Astro.props;
+
+const { default: Logo } = await import(`../pages/${name}/Logo.astro`);
+
+const __filename = resolve(
+  __dirname,
+  `..${import.meta.env.PROD ? "/src/" : ""}/pages/${name}/index.astro`
+);
+
+const statData = statSync(__filename);
+---
+
+<div
+  w-220px
+  h-120px
+  bg="#CDE2D1"
+  rounded-12px
+  cursor-pointer
+  relative
+  overflow-hidden
+>
+  <div w="100%" h-95px>
+    <Logo />
+  </div>
+  <div absolute bottom-0 left-0 w-full h-25px bg="#D2DADA">
+    <div font-mono text-12px flex justify-between items-center px-3 h="100%">
+      {name}
+      {statData.mtime.toLocaleDateString()}
+    </div>
+  </div>
+</div>
+
+<style></style>
