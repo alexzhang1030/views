@@ -1,5 +1,5 @@
 ---
-import { Github, AstroIcon } from "@components/HeaderIcons";
+import { Github, AstroIcon, ToggleDark } from "@components/HeaderIcons";
 ---
 
 <main
@@ -23,6 +23,9 @@ import { Github, AstroIcon } from "@components/HeaderIcons";
     >
       <div text-36px font-lobster><a href="/">Alex's View Playground</a></div>
       <div flex justify-start items-center>
+        <div mr-2 flex items-center>
+          <ToggleDark client:only="solid" />
+        </div>
         <div flex justify-start items-center>
           <span mr-2 font-mono> Check out source code on</span>
           <Github client:idle />
