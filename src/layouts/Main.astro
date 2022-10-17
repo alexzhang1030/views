@@ -6,6 +6,7 @@ import { Github, AstroIcon, ToggleDark } from "@components/HeaderIcons";
   w-full
   h-100vh
   bg="#D2DADA"
+  dark:bg="#0A0C18"
   flex="~"
   justify-center
   items-center
@@ -16,10 +17,12 @@ import { Github, AstroIcon, ToggleDark } from "@components/HeaderIcons";
       w-full
       h-100px
       bg="#CDE2D1"
+      dark:bg="#3247F5"
       flex="~"
       justify-between
       items-center
       px-8
+      dark:text-white
     >
       <div text-36px font-lobster><a href="/">Alex's View Playground</a></div>
       <div flex justify-start items-center>
@@ -33,7 +36,7 @@ import { Github, AstroIcon, ToggleDark } from "@components/HeaderIcons";
         <div font-mono ml-4>Powered By <AstroIcon client:idle /></div>
       </div>
     </header>
-    <main w-full h="[calc(100%-100px)]" overflow-hidden p8>
+    <main w-full h="[calc(100%-100px)]" overflow-hidden p8 dark:bg="#33385B">
       <slot />
     </main>
   </main>

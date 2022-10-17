@@ -28,6 +28,7 @@ export function AstroIcon() {
       <span
       class="cursor-pointer
           bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent"
+          dark:from-green-500 dark:to-yellow-500
           onClick={() => window.open('https://astro.build/')}>
       Astro
     </span>

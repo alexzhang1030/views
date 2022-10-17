@@ -21,7 +21,15 @@ const statData = statSync(__filename);
 ---
 
 <a href={`/${name}`}>
-  <div w-275px h-150px bg="#CDE2D1" rounded-12px relative overflow-hidden>
+  <div
+    w-275px
+    h-150px
+    bg="#CDE2D1"
+    dark:bg="#3247F5"
+    rounded-12px
+    relative
+    overflow-hidden
+  >
     <div w="100%" h-95px>
       <Logo />
     </div>
@@ -32,6 +40,8 @@ const statData = statSync(__filename);
       w-full
       h-25px
       bg="#D2DADA"
+      dark:bg="#525B96"
+      dark:text-white
       flex
       justify-between
       items-center
