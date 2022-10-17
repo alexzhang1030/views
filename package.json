@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.27.0",
+    "@colid/core": "^0.0.1",
     "@iconify-json/carbon": "^1.1.8",
     "@iconify-json/line-md": "^1.1.17",
     "@iconify-json/logos": "^1.1.17",

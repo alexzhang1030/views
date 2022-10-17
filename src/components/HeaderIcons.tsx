@@ -1,4 +1,4 @@
-import { useDark } from '@composables/useDark'
+import { useDark } from '@colid/core'
 
 export function ToggleDark() {
   const [dark, setDark] = useDark()
