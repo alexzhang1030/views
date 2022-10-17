@@ -1,28 +1,20 @@
 ---
-import ViewItem from "@components/ViewItem.astro";
-import { data } from "@data/views";
-import Main from "@layouts/Main.astro";
+import Main from "./Main.astro";
+const routeName = Astro.url.pathname.slice(1);
 ---
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Alex's View Playground</title>
+    <title>{routeName} - Alex's View Playground</title>
     <meta name="description" content="Alex's View Playground" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   </head>
-
   <body>
     <Main>
-      <div flex="~ wrap" justify-between gap-3>
-        {
-          data.map((item) => {
-            return <ViewItem {...item} />;
-          })
-        }
-      </div>
+      <slot />
     </Main>
   </body>
 </html>

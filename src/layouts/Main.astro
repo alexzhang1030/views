@@ -21,24 +21,16 @@ import { Github, AstroIcon } from "@components/HeaderIcons";
       items-center
       px-8
     >
-      <div text-36px font-lobster class="title">Alex's View Playground</div>
+      <div text-36px font-lobster><a href="/">Alex's View Playground</a></div>
       <div flex justify-start items-center>
         <div flex justify-start items-center>
           <span mr-2 font-mono> Check out source code on</span>
-          <Github client:load />
+          <Github client:idle />
         </div>
-        <div font-mono ml-4>Powered By <AstroIcon client:visible /></div>
+        <div font-mono ml-4>Powered By <AstroIcon client:idle /></div>
       </div>
     </header>
-    <main
-      w-full
-      h="[calc(100%-100px)]"
-      overflow-hidden
-      p8
-      flex="~ wrap"
-      justify-between
-      gap-3
-    >
+    <main w-full h="[calc(100%-100px)]" overflow-hidden p8>
       <slot />
     </main>
   </main>

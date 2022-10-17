@@ -1,5 +1,8 @@
 ---
-import MainLayout from "@layouts/MainLayout.astro";
+import View from "@layouts/View.astro";
+import { Button } from "./_Button";
 ---
 
-<MainLayout>hello</MainLayout>
+<View>
+  <Button client:load />
+</View>
