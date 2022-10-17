@@ -1,0 +1,17 @@
+.button {
+    --ripple-color: #2080f0;
+    animation: button-wave 0.5s ease-out 1;
+}
+
+
+@keyframes button-wave {
+    from {
+        box-shadow: 0 0 0.5px 0 var(--ripple-color);
+        opacity: 0.6;
+    }
+
+    to {
+        box-shadow: 0 0 0.5px 4px var(--ripple-color);
+        opacity: 0;
+    }
+}
