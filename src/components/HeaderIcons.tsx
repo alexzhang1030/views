@@ -1,10 +1,9 @@
 import { useDark } from '@colid/core'
 
 export function ToggleDark() {
-  const [dark, setDark] = useDark()
-
+  const { setIsDark } = useDark()
   const toggleDark = () => {
-    setDark(!dark())
+    setIsDark(d => !d)
   }
   return (
     <button class="icon-btn mx-2 !outline-none" onclick={() => toggleDark()}>
